@@ -1,0 +1,21 @@
+{
+  "name": "Blue Giraffe Creamery",
+  "version": "1.0.0",
+  "description": "",
+  "main": "routes.js",
+  "dependencies": {
+    "babel-runtime": "^6.20.0",
+    "autoprefixer": "^6.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Michael Kant",
+  "license": "ISC",
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {"browsers": ["last 2 versions"]}
+    }
+  }
+}

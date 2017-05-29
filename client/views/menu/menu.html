@@ -1,0 +1,86 @@
+<template name="menu">
+	<section id="menuItems" class="ui container">
+		<h2 class="ui horizontal header divider title" id="flavours"><span>Ice Cream Flavours</span></h2>
+		<div class="ui stackable grid">
+			<div class="six wide column">
+				<img class="ui fluid centered image" src='/images/nitro.jpg'>
+			</div>
+			<div class="ten wide column text container">
+				{{{ dict 'text.menuWelcome' }}}
+			</div>
+		</div>
+		<div class="ui items doubling three column relaxed equal height grid container">
+			{{#each flavours}}
+				<div class="column">
+					<div class="ui centered message">
+						{{#if photo}}
+						<div class="flavour-image" style="background-image: url({{photo.url}});"></div>
+						{{else}}
+						<div class="flavour-image" style="background-image: url('/images/noImage.png');"></div>
+						{{/if}}
+						<div class="content">
+							<div class="ui centered header">{{name}}
+							</div>
+							<p>{{description}}</p>
+						</div>
+					</div>
+				</div>
+			{{/each}}
+		</div>
+		<h2 class="ui horizontal header divider title" id="lollywaffles"><span>Waffle-on-a-Stick</span></h2>
+		<div class="ui mobile reversed stackable relaxed grid container">
+			<div class="eight wide stackable column">
+				<div class="ui grid">
+					{{#each lollywaffles}}
+
+
+					<div class="eight wide stackable column">
+						{{#if image}}
+						<img src="{{image}}" class="ui centered small image">
+						{{else}}
+						<img src="images/noimage.png" class="ui centered small image">
+						{{/if}}
+						<h4 class="ui centered header">{{flavour}}</h4>
+					</div>
+
+
+					{{/each}}
+				</div>
+			</div>
+			<div class="eight wide stackable column ui main text container">
+				{{{ dict 'text.waffleText' }}}
+			</div>
+		</div>
+
+		<h2 class="ui horizontal header divider title" id="flavours"><span>Baked Mini Donuts</span></h2>
+		<div class="ui items doubling three column relaxed equal height grid container">
+			<div class="column">
+				<div class="ui centered message">
+					<div class="flavour-image" style="background-image: url('/images/donut_plate.jpg');"></div>
+					<div class="content">
+						<p>Drizzled with both white and milk chocolate and topped with whipped cream</p>
+					</div>
+				</div>
+			</div>
+			<div class="column">
+				<div class="ui centered message">
+					<div class="flavour-image" style="background-image: url('/images/donuts.jpg');"></div>
+					<div class="content">
+						<p>Tossed in cinnamon sugar</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="ui two column grid">
+			<div class="ui center aligned column">
+				<h2 class="ui horizontal header divider title"><span>Toppings</span></h2>
+				{{{ dict 'text.toppings' }}}
+			</div>
+			<div class="ui center aligned column">
+				<h2 class="ui horizontal header divider title"><span>Other Items</span></h2>
+				{{{ dict 'text.otherItems' }}}
+			</div>
+		</div>
+	</section>
+</template>
