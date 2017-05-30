@@ -15,7 +15,7 @@ orion.dictionary.addDefinition('otherItems', 'text',
   orion.attribute('froala')
 );
 
-orion.dictionary.addDefinition('ourStoryWelcome', 'text',
+orion.dictionary.addDefinition('ourStoryText', 'text',
   orion.attribute('froala')
 );
 
