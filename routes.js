@@ -1,6 +1,5 @@
 
 Router.configure({
-	loadingTemplate: 'loading',
 	layoutTemplate: 'layout',
     onAfterAction: function() {
         $('.ui.sticky').sticky({
@@ -11,11 +10,11 @@ Router.configure({
             type: 'fixed',
         });
 
-        $('.contactbutton').click(function() {
-            $('html, body').animate({
-                scrollTop: $("#footer").offset().top - 140
-            });
-        });
+        // $('.contactbutton').click(function() {
+        //     $('html, body').animate({
+        //         scrollTop: $("#footer").offset().top - 140
+        //     });
+        // });
 
         window.onscroll = function(ev) {
             if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) {
