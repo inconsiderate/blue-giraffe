@@ -5,7 +5,7 @@ Template.locations.onRendered(function() {
 Template.locations.helpers({
 	permEvents: function() {
 		return Events.find({
-			category: { $in: ['perm'] }
+			duration: { $in: ['perm'] }
 		});
 	},
 	tempEvents: function() {
