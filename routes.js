@@ -15,8 +15,6 @@ Router.configure({
 
 Router.route('/', {
     action: function() {
-        this.render('header', {to: 'header'});
-        this.render('footer', {to: 'footer'});
         this.render('landingPage', {to: 'content'});
     }
 });
@@ -26,16 +24,12 @@ Router.route('/menu', {
         return Meteor.subscribe('flavours');
     },
     action: function() {
-        this.render('header', {to: 'header'});
-        this.render('footer', {to: 'footer'});
         this.render('menu', {to: 'content'});
     }
 });
 
 Router.route('/ourStory', {
     action: function() {
-        this.render('header', {to: 'header'});
-        this.render('footer', {to: 'footer'});
         this.render('ourStory', {to: 'content'});
     }
 });
@@ -45,16 +39,12 @@ Router.route('/locations', {
         return Meteor.subscribe('events');
     },
     action: function() {
-        this.render('header', {to: 'header'});
-        this.render('footer', {to: 'footer'});
         this.render('locations', {to: 'content'});
     }
 });
 
 Router.route('/events', {
     action: function() {
-        this.render('header', {to: 'header'});
-        this.render('footer', {to: 'footer'});
         this.render('cateredEvents', {to: 'content'});
     }
 });
@@ -64,8 +54,6 @@ Router.route('/photos', {
         return Meteor.subscribe('photos');
     },
     action: function() {
-        this.render('header', {to: 'header'});
-        this.render('footer', {to: 'footer'});
         this.render('photos', {to: 'content'});
     }
 });
