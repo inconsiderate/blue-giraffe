@@ -6,7 +6,4 @@ Template.header.onRendered(function() {
         context: '#fullpage'
     });
 
-    $('.ui.sticky.menubar').visibility({
-        type: 'fixed',
-    });
 });
