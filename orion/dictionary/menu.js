@@ -19,6 +19,10 @@ orion.dictionary.addDefinition('ourStoryText', 'text',
   orion.attribute('froala')
 );
 
-orion.dictionary.addDefinition('eventHeadline', 'text',
+orion.dictionary.addDefinition('locationsHeadline', 'text',
+  orion.attribute('froala')
+);
+
+orion.dictionary.addDefinition('cateredEventText', 'text',
   orion.attribute('froala')
 );
