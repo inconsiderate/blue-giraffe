@@ -25,7 +25,7 @@ Events.attachSchema(new SimpleSchema({
             afFieldInput: {
                 type: "select-checkbox-inline",
                 options: function () {
-                    return { perm: 'perm', temp: 'temp'};
+                    return { perm: 'Permanent Location', temp: 'Temporary Event'};
                 }
             }
         }
@@ -33,7 +33,7 @@ Events.attachSchema(new SimpleSchema({
 
     footNote: {
         type: Boolean,
-        label: 'Show Footnote',
+        label: 'Show asterix for Footnote',
         optional: true
     },
     createdBy: orion.attribute('createdBy'),
