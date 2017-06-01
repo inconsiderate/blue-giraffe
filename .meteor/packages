@@ -38,7 +38,7 @@ standard-minifier-js@1.2.1
 shell-server@0.2.1
 materialize:materialize
 orionjs:materialize
-semantic:ui
 juliancwirko:postcss
-semantic:ui-css@=2.1.2
 aldeed:autoform
+semantic:ui
+semantic:ui-css@=2.1.2
