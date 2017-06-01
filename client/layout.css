@@ -155,3 +155,10 @@ ul {
     font-size: 2rem;
     margin-top: 1em;
 }
+
+ul:not(.browser-default) li {
+    list-style-type: inherit;
+}
+.froala-view ul, .froala-view ol, ul.fr-tag, ol.fr-tag {
+    list-style-type: inherit;
+}
