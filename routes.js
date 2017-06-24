@@ -2,7 +2,6 @@
 Router.configure({
 	layoutTemplate: 'layout',
     onAfterAction: function() {
-
         window.onscroll = function(ev) {
             if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) {
               $('#footer').addClass('showFooter');
@@ -16,7 +15,10 @@ Router.configure({
 Router.route('/', {
     action: function() {
         this.render('landingPage', {to: 'content'});
-    }
+    },
+    waitOn: function () {
+        return Meteor.subscribe('photoAssets');
+    },
 });
 
 Router.route('/menu', {
@@ -36,7 +38,7 @@ Router.route('/ourStory', {
 
 Router.route('/locations', {
     waitOn: function () {
-        return Meteor.subscribe('events');
+        return [Meteor.subscribe('longEvents'),Meteor.subscribe('shortEvents')];
     },
     action: function() {
         this.render('locations', {to: 'content'});
