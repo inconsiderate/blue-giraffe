@@ -3,15 +3,15 @@ orion.dictionary.addDefinition('menuWelcome', 'text',
   orion.attribute('froala')
 );
 
-orion.dictionary.addDefinition('waffleText', 'text',
+orion.dictionary.addDefinition('menuWaffle', 'text',
   orion.attribute('froala')
 );
 
-orion.dictionary.addDefinition('toppings', 'text',
+orion.dictionary.addDefinition('menuToppings', 'text',
   orion.attribute('froala')
 );
 
-orion.dictionary.addDefinition('otherItems', 'text',
+orion.dictionary.addDefinition('menuOtherItems', 'text',
   orion.attribute('froala')
 );
 
@@ -23,6 +23,12 @@ orion.dictionary.addDefinition('locationsHeadline', 'text',
   orion.attribute('froala')
 );
 
+orion.dictionary.addDefinition('locationsFootnoteText', 'text',
+  orion.attribute('froala')
+);
+
 orion.dictionary.addDefinition('cateredEventText', 'text',
   orion.attribute('froala')
 );
+
+

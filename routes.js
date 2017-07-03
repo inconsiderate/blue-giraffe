@@ -1,4 +1,3 @@
-
 Router.configure({
 	layoutTemplate: 'layout',
     onAfterAction: function() {
@@ -17,13 +16,15 @@ Router.route('/', {
         this.render('landingPage', {to: 'content'});
     },
     waitOn: function () {
+
         return Meteor.subscribe('photoAssets');
     },
 });
 
 Router.route('/menu', {
     waitOn: function () {
-        return Meteor.subscribe('flavours');
+
+        return [Meteor.subscribe('flavours'),Meteor.subscribe('photoAssets')];
     },
     action: function() {
         this.render('menu', {to: 'content'});
@@ -38,6 +39,7 @@ Router.route('/ourStory', {
 
 Router.route('/locations', {
     waitOn: function () {
+
         return [Meteor.subscribe('longEvents'),Meteor.subscribe('shortEvents')];
     },
     action: function() {
@@ -53,10 +55,10 @@ Router.route('/events', {
 
 Router.route('/photos', {
     waitOn: function () {
+
         return Meteor.subscribe('photos');
     },
     action: function() {
         this.render('photos', {to: 'content'});
     }
 });
-

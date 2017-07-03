@@ -3,15 +3,11 @@ Template.locations.onRendered(function() {
 });
 
 Template.locations.helpers({
-	permEvents: function() {
-		return Events.find({
-			duration: { $in: ['perm'] }
-		}, {sort: { date: 1 }});
+	longEvents: function() {
+		return LEvents.find({}, {sort: { date: 1 }});
 	},
-	tempEvents: function() {
-		return Events.find({
-			duration: { $in: ['temp'] }
-		}, {sort: { date: 1 }});
+	shortEvents: function() {
+		return SEvents.find({}, {sort: { date: 1 }});
 	},
 
 	formatDate: function() {

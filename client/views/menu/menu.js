@@ -1,12 +1,12 @@
 
 Template.menu.helpers({
 	flavours: function() {
+
 		return Flavours.find();
 	},
-	menuPage: function() {
-		return PhotoAssets.findOne({
-			location: 'menuPage'
-		})
+	menuPageImage: function() {
+
+		return PhotoAssets.findOne({location: 'menuPageImage'});
 	}
 });
 
