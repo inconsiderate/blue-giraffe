@@ -5,13 +5,9 @@ LEvents.attachSchema(new SimpleSchema({
         optional: true
     },
     date: {
-      type: Date,
+      type: String,
       optional: true,
       label: 'Date',
-      autoValue: function() {
-        var momentDate = moment(this.value);
-        return momentDate.add(9, 'hours').toDate();
-      }
     },
     time: {
         type: String,
