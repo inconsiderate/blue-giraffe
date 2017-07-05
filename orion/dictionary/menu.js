@@ -31,4 +31,6 @@ orion.dictionary.addDefinition('cateredEventText', 'text',
   orion.attribute('froala')
 );
 
-
+orion.dictionary.addDefinition('eventPhotosHeadline', 'text',
+  orion.attribute('froala')
+);
