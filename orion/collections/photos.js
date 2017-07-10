@@ -15,7 +15,6 @@ Photos = new orion.collection('photos', {
     tabular: {
         columns: [
             { data: 'title', title: 'Title' },
-            { data: 'description', title: 'Description' },
             orion.attributeColumn('image', 'photo', 'Photo'),
         ]
     }

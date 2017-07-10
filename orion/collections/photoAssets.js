@@ -25,7 +25,7 @@ PhotoAssets.attachSchema(new SimpleSchema({
             afFieldInput: {
                 type: "select-radio",
                 options: function () {
-                    return { homePageImage: 'Home Page', menuPageImage: 'Top of Menu Page'};
+                    return { homePageImage: 'Home Page', menuPageImage: 'Top of Menu Page', imageMissingImage: 'Image Missing'};
                 }
             }
         }

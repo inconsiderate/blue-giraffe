@@ -16,7 +16,7 @@
 						{{#if photo}}
 						<div class="flavour-image" style="background-image: url({{photo.url}});"></div>
 						{{else}}
-						<div class="flavour-image" style="background-image: url('/images/noImage.png');"></div>
+						<div class="flavour-image" style="background-image: url('{{imageMissingImage.photo.url}}');"></div>
 						{{/if}}
 						<div class="content">
 							<div class="ui centered header">{{name}}
