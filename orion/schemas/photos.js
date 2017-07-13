@@ -9,7 +9,7 @@
         optional: true
     },
     photo: orion.attribute('image', {
-        label: 'Photo',
+        label: 'Photo - remember to scale these images down so they load faster! Arouns 800px wide is probably good.',
         optional: true
     }),
     createdBy: orion.attribute('createdBy'),
