@@ -6,6 +6,7 @@
     description: {
         type: String,
         label: 'Description',
+        optional: true
     },
     photo: orion.attribute('image', {
         label: 'Photo',

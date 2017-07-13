@@ -1,7 +1,7 @@
 
 Template.photos.helpers({
 	pics: function() {
-		return Photos.find();
+		return Photos.find({}, {sort: { createdAt: -1 }});
 	},
 });
 
