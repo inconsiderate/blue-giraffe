@@ -23,3 +23,13 @@ Meteor.publish('photoAssets', function () {
 
 	return PhotoAssets.find({});
 });
+
+Meteor.publish('finalFeaturedItem', function () {
+
+	return FinalFeaturedItem.find({});
+});
+
+Meteor.publish('waffles', function () {
+
+	return Waffles.find({});
+});

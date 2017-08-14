@@ -3,6 +3,10 @@ orion.dictionary.addDefinition('menuWelcome', 'text',
   orion.attribute('froala')
 );
 
+orion.dictionary.addDefinition('menuWaffleHeadline', 'text',
+  orion.attribute('froala')
+);
+
 orion.dictionary.addDefinition('menuWaffle', 'text',
   orion.attribute('froala')
 );
@@ -12,6 +16,10 @@ orion.dictionary.addDefinition('menuToppings', 'text',
 );
 
 orion.dictionary.addDefinition('menuOtherItems', 'text',
+  orion.attribute('froala')
+);
+
+orion.dictionary.addDefinition('menuFinalFeaturedHeader', 'text',
   orion.attribute('froala')
 );
 

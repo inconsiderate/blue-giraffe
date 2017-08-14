@@ -23,8 +23,7 @@ Router.route('/', {
 
 Router.route('/menu', {
     waitOn: function () {
-
-        return [Meteor.subscribe('flavours'),Meteor.subscribe('photoAssets')];
+        return [Meteor.subscribe('flavours'),Meteor.subscribe('photoAssets'),Meteor.subscribe('finalFeaturedItem'),Meteor.subscribe('waffles')];
     },
     action: function() {
         this.render('menu', {to: 'content'});

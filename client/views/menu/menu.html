@@ -27,58 +27,52 @@
 				</div>
 			{{/each}}
 		</div>
-		<h2 class="ui horizontal header divider title" id="lollywaffles"><span>Waffle-on-a-Stick</span></h2>
+		<h2 class="ui horizontal header divider title" id="lollywaffles"><span>{{{ dict 'text.menuWaffleHeadline' }}}</span></h2>
 		<div class="ui mobile reversed stackable relaxed grid container">
-			<div class="eight wide stackable column">
-				<div class="ui grid">
-					<div class="eight wide stackable column">
-						<img src="/images/waffle_belgian.bmp" class="ui centered small image">
-						<h4 class="ui centered header">Belgian</h4>
-					</div>
-					<div class="eight wide stackable column">
-						<img src="/images/waffle_cinnamon.jpg" class="ui centered small image">
-						<h4 class="ui centered header">Cinnamon</h4>
-					</div>
-					<div class="eight wide stackable column">
-						<img src="/images/waffle_smores.bmp" class="ui centered small image">
-						<h4 class="ui centered header">Smores</h4>
-					</div>
-					<div class="eight wide stackable column">
-						<img src="/images/waffle_pizza.bmp" class="ui centered small image">
-						<h4 class="ui centered header">Pizza 'n Mozza</h4>
-					</div>
-					<div class="eight wide stackable column">
-						<img src="/images/waffle_dog.bmp" class="ui centered small image">
-						<h4 class="ui centered header">Waffle Dog</h4>
-					</div>
-				</div>
+			<div class="waffle-text-container six wide stackable column">
+				{{{ dict 'text.menuWaffle' }}}			
 			</div>
-			<div class="eight wide stackable column ui main text container">
-				{{{ dict 'text.menuWaffle' }}}
+			<div class="waffle-item-container ten wide stackable ui items two column relaxed equal height grid container">
+				{{#each waffles}}
+					<div class="column">
+						<div class="ui centered message">
+							{{#if photo}}
+							<div class="flavour-image" style="background-image: url({{photo.url}});"></div>
+							{{else}}
+							<div class="flavour-image" style="background-image: url('{{imageMissingImage.photo.url}}');"></div>
+							{{/if}}
+							<div class="content">
+								<div class="ui centered header">{{name}}
+								</div>
+								<p>{{description}}</p>
+							</div>
+						</div>
+					</div>
+				{{/each}}
 			</div>
 		</div>
 
-		<h2 class="ui horizontal header divider title" id="flavours"><span>Baked Mini Donuts</span></h2>
-		<div class="ui items doubling three column relaxed equal height grid container">
-			<div class="column">
-				<div class="ui centered message">
-					<div class="flavour-image" style="background-image: url('/images/donuts_ad.jpg');"></div>
-					<div class="content">
-						<p>Tossed in cinnamon sugar</p>
+		<h2 class="ui horizontal header divider title" id="finalFeaturedItems"><span>{{{ dict 'text.menuFinalFeaturedHeader' }}}</span></h2>
+		<div class="ui items doubling five column relaxed equal height grid container">
+			{{#each finalFeaturedItem}}
+				<div class="column">
+					<div class="ui centered message">
+						{{#if photo}}
+						<div class="flavour-image" style="background-image: url({{photo.url}});"></div>
+						{{else}}
+						<div class="flavour-image" style="background-image: url('{{imageMissingImage.photo.url}}');"></div>
+						{{/if}}
+						<div class="content">
+							<div class="ui centered header">{{name}}
+							</div>
+							<p>{{description}}</p>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="column">
-				<div class="ui centered message">
-					<div class="flavour-image" style="background-image: url('/images/donut_plate.jpg');"></div>
-					<div class="content">
-						<p>Drizzled with both white and milk chocolate and topped with whipped cream</p>
-					</div>
-				</div>
-			</div>
+			{{/each}}
 		</div>
-
-		<div class="ui two column grid">
+ 
+ 		<div class="ui two column grid">
 			<div class="ui center aligned column">
 				<h2 class="ui horizontal header divider title"><span>Toppings</span></h2>
 				{{{ dict 'text.menuToppings' }}}
