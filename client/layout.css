@@ -121,8 +121,12 @@ ul {
     text-align: center;
 }
 
-.flavour-image {
+.waffle-item-container .flavour-image {
     height: 100px;
+}
+
+.flavour-image {
+    height: 200px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
