@@ -19,7 +19,7 @@ orion.dictionary.addDefinition('menuOtherItems', 'text',
   orion.attribute('froala')
 );
 
-orion.dictionary.addDefinition('menuFinalFeaturedHeader', 'text',
+orion.dictionary.addDefinition('menuFeaturedItemHeader', 'text',
   orion.attribute('froala')
 );
 
