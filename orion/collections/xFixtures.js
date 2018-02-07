@@ -10,69 +10,69 @@ if (Meteor.isServer) {
         });
     }
 
-    if (LEvents.find().count() < 4) {
-        LEvents.remove({});
+    // if (LEvents.find().count() < 4) {
+    //     LEvents.remove({});
 
-        LEvents.insert({
-            location: 'South Hamptons',
-            date: new Date(),
-            time: '2pm - 9pm',
-            footnote: true,
-        });
-        LEvents.insert({
-            location: 'South Hamptons',
-            date: new Date(),
-            time: '2pm - 9pm',
-            footnote: true,
-        });
-        LEvents.insert({
-            location: 'South Hamptons',
-            date: new Date(),
-            time: '2pm - 9pm',
-            footnote: true,
-        });
-        LEvents.insert({
-            location: 'South Hamptons',
-            date: new Date(),
-            time: '2pm - 9pm',
-            footnote: true,
-        });
-    }
+    //     LEvents.insert({
+    //         location: 'South Hamptons',
+    //         date: new Date(),
+    //         time: '2pm - 9pm',
+    //         footnote: true,
+    //     });
+    //     LEvents.insert({
+    //         location: 'South Hamptons',
+    //         date: new Date(),
+    //         time: '2pm - 9pm',
+    //         footnote: true,
+    //     });
+    //     LEvents.insert({
+    //         location: 'South Hamptons',
+    //         date: new Date(),
+    //         time: '2pm - 9pm',
+    //         footnote: true,
+    //     });
+    //     LEvents.insert({
+    //         location: 'South Hamptons',
+    //         date: new Date(),
+    //         time: '2pm - 9pm',
+    //         footnote: true,
+    //     });
+    // }
 
-    if (SEvents.find().count() < 3) {
-        SEvents.remove({});
+    // if (SEvents.find().count() < 3) {
+    //     SEvents.remove({});
 
-        SEvents.insert({
-            location: 'County Fair',
-            date: new Date(),
-            time: '4pm - 9pm',
-        });
-        SEvents.insert({
-            location: 'County Fair',
-            date: new Date(),
-            time: '4pm - 9pm',
-        });
-        SEvents.insert({
-            location: 'County Fair',
-            date: new Date(),
-            time: '4pm - 9pm',
-        });
-    }
+    //     SEvents.insert({
+    //         location: 'County Fair',
+    //         date: new Date(),
+    //         time: '4pm - 9pm',
+    //     });
+    //     SEvents.insert({
+    //         location: 'County Fair',
+    //         date: new Date(),
+    //         time: '4pm - 9pm',
+    //     });
+    //     SEvents.insert({
+    //         location: 'County Fair',
+    //         date: new Date(),
+    //         time: '4pm - 9pm',
+    //     });
+    // }
 
-    if (Flavours.find().count() < 3) {
-        Flavours.remove({});
+    // if (Flavours.find().count() < 3) {
+    //     Flavours.remove({});
 
-        Flavours.insert({
-            name: 'Raspberry',
-            description: 'This is an example of a description',
-        });
-        Flavours.insert({
-            name: 'Raspberry',
-            description: 'This is an example of a description',
-        });
-        Flavours.insert({
-            name: 'Raspberry',
-            description: 'This is an example of a description',
-        });
-    }
+    //     Flavours.insert({
+    //         name: 'Raspberry',
+    //         description: 'This is an example of a description',
+    //     });
+    //     Flavours.insert({
+    //         name: 'Raspberry',
+    //         description: 'This is an example of a description',
+    //     });
+    //     Flavours.insert({
+    //         name: 'Raspberry',
+    //         description: 'This is an example of a description',
+    //     });
+    // }
 }
